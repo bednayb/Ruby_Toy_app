@@ -14,7 +14,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name %></td>
+        <td style="color:blue;margin-left:30px;"><%= user.name %></td>  <!-- check css works here or not -->
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
@@ -27,3 +27,6 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+
+<!-- check css works here or not -->
